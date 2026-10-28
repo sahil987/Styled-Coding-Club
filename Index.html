@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #eef2ff;
+            color: #1c2748;
+            font-family: Georgia, serif;
+        }
+
+        header {
+            background-color: #315bea;
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 64px;
+            margin: 0 0 20px;
+        }
+
+        header p {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px 35px;
+            border-radius: 22px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 48px;
+            margin: 10px 0 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 30px;
+        }
+
+        th {
+            background-color: #315bea;
+            color: white;
+            text-align: left;
+            padding: 20px 18px;
+        }
+
+        td {
+            padding: 23px 18px;
+            border-bottom: 2px solid #d1d5e5;
+        }
+
+        form {
+            font-size: 30px;
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 105px;
+        }
+
+        input {
+            font-size: 25px;
+            padding: 15px;
+            width: 385px;
+            max-width: 100%;
+            border: 2px solid #888;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #315bea;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 35px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2146c5;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            header {
+                padding: 45px 10px;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            header p {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 20px 15px;
+                overflow-x: auto;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            table {
+                font-size: 17px;
+                min-width: 400px;
+            }
+
+            form {
+                font-size: 20px;
+            }
+
+            label {
+                display: block;
+                width: auto;
+                margin-bottom: 8px;
+            }
+
+            input {
+                width: 100%;
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Coding Club</h1>
+        <p>Learn. Build. Share.</p>
+    </header>
+
+    <section>
+        <h2>Upcoming Events</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML Workshop</td>
+                    <td>12 Nov</td>
+                    <td>Lab 1</td>
+                </tr>
+
+                <tr>
+                    <td>Hackathon</td>
+                    <td>20 Nov</td>
+                    <td>Seminar Hall</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Register</h2>
+
+        <form action="#" method="post">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</body>
+</html>
